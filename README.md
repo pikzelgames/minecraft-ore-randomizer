@@ -1,6 +1,7 @@
 # Minecraft Ore Randomizer
 
 This is a project inspired by Jay Exci's video (https://www.youtube.com/watch?v=CS5DQVSp058) on how infinite features could be added to Minecraft.
+The end goal for this project is to have a mod which allows you to have fully working and unique random ores naturally found in the world.
 
 ## Installation
 
