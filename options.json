@@ -1,0 +1,7 @@
+{
+    "base-block": ["stone", "stone", "stone", "stone", "sand", "sand", "dirt", "dirt", "netherrack", "netherrack", "gravel", "diorite", "andesite", "granite"],
+    "ore-type": ["coal", "iron", "gold", "diamond", "redstone", "lapis", "quartz", "emerald"],
+    "item-type": ["coal", "iron", "gold", "diamond", "redstone", "lapis", "quartz", "emerald", "charcoal", "flint", "slimeball"],
+    "rarity": ["coal", "iron", "gold", "diamond", "redstone", "lapis", "quartz", "emerald"],
+    "colour": "random-rgb"
+}
