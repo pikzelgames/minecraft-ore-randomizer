@@ -1,0 +1,55 @@
+{
+    "keys": {     
+        "ore-base-block": "The block that the ore appears in, and is the base of the ore texture.",
+        "ore-mask": "The image that determines the shape of the coloured parts of the ore and the vibrance of the colour in different pixels.",
+        "refined-item-mask": "The image that determines the shape of the refined item and the vibrance of the colour in different pixels.",
+        "colour": "The base colour of the ore and refined item. This will be the colour of the pixels in the textures where the mask colour is completely white.",
+
+        "spawning-rules": "The set of spawning rules the game will follow when generating this ore. The options are preexisting spawning rules for vanilla ores.",
+        "dungeon-spawn -> end-city-spawn": "The likelyhood of the game spawning the refined item in loot chests inside each generated structure.",
+        
+        "ore-drop": "Does the ore drop the refined item or the ore block when mined?",
+        "minimum-tool-level": "The lowest harvesting level that a tool needs to be to harvest the ore.",
+        
+        "damage-status-effect": "The status effect ID that is given to an entity when damaged with a sword made of this ore (see status-effect-on-attack). This is always a negative effect.",
+        "consume-status-effect": "The status effect ID that is given to the player when the refined item is consumed (see consumable-status-effect). This is always a positive effect.",
+
+        "tool-craftable": "Can the refined item be crafted into tools?",
+        "armour-craftable": "Can the refined item be crafted into armour?",
+        "block-craftable": "Can the refined item be crafted into blocks?",
+
+        "consumable-food": "Can the refined item be consumed for food?",
+        "consumable-status-effect": "Can the refined item be consumed for a status effect?",
+
+        "food-value": "The amount of food points that are given to the player after consuming the refined item.",
+        "consumed-effect-duration": "The duration of the status effect given to the player after consuming the refined item.",
+
+        "tool-durability": "The durability value of the tools made of this ore.",
+        "tool-mine-speed": "The mining speed for tools made of this ore.",
+        "tool-harvesting-level": "The harvesting level for tools made of this ore.",
+
+        "attack-damage": "The amount of damage these tools can do; this value corresponds to a set of vanilla tools, which are used for the values.",
+        "status-effect-on-attack": "Is a status effect applied to an entity when damaged with a sword made of this ore?",
+        "attack-effect-duration": "The duration of the status effect given to an entity after being damaged with a sword made of this ore.",
+
+        "helmet-durability -> boots-durability": "The durability value of each armour piece.",
+        
+        "helmet-protection -> boots-protection": "The amount of armour points each armour piece gives. A full armour bar is 20 points.",
+
+        "refined-block-mask": "The base texture for the refined block of this ore."
+    },
+    "options-by-key": {
+        "dungeon-spawn -> end-city-spawn": "0 = none, 1 = very rare, 2 = rare, 3 = uncommon, 4 = common",
+        "minimum-tool-level": "0 = hand, 1 = wood, 2 = stone, 3 = iron, 4 = diamond",
+        "damage-status-effect -> consume-status-effect": "Minecraft status effect ID for corresponding effect",
+        "tool-craftable -> consumable-status-effect": "0 = no, 1 = yes",
+        "tool-mine-speed": "0 = wood, 1 = stone, 2 = iron, 4 = diamond, 5 = gold",
+        "attack-damage": "0 = wood, 1 = stone, 2 = iron, 4 = diamond, 5 = gold",
+        "status-effect-on-attack": "0 = no, 1 = yes"
+    },
+    "options-by-value": {
+        "[ARRAY]": "The program chooses from the elements in the array in an equal probability distribution.",
+        "random-rgb": "The program randomly picks 3 values from 0 to 255 inclusive which determine the R, G and B colour values of the colour.",
+        "[range-inclusive, A, B]": "The program randomly picks a value from A to B inclusive."
+    }
+}
