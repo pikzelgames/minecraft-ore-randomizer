@@ -11,15 +11,18 @@
         "ore-drop": "Does the ore drop the refined item or the ore block when mined?",
         "minimum-tool-level": "The lowest harvesting level that a tool needs to be to harvest the ore.",
         
-        "damage-status-effect": "The status effect ID that is given to an entity when damaged with a sword made of this ore (see status-effect-on-attack). This is always a negative effect.",
-        "consume-status-effect": "The status effect ID that is given to the player when the refined item is consumed (see consumable-status-effect). This is always a positive effect.",
+        "positive-status-effect": "The positive status effect ID that is associated with this ore.",
+        "negative-status-effect": "The negative status effect ID that is associated with this ore.",
 
         "tool-craftable": "Can the refined item be crafted into tools?",
-        "armour-craftable": "Can the refined item be crafted into armour?",
+        "helmet-craftable": "Can the refined item be crafted into a helmet?",
+        "chestplate-craftable": "Can the refined item be crafted into a chestplate?",
+        "leggings-craftable": "Can the refined item be crafted into a leggings?",
+        "boots-craftable": "Can the refined item be crafted into a boots?",
         "block-craftable": "Can the refined item be crafted into blocks?",
 
         "consumable-food": "Can the refined item be consumed for food?",
-        "consumable-status-effect": "Can the refined item be consumed for a status effect?",
+        "consumable-status-effect": "Can the refined item be consumed for a status effect? (this is always positive)",
 
         "food-value": "The amount of food points that are given to the player after consuming the refined item.",
         "consumed-effect-duration": "The duration of the status effect given to the player after consuming the refined item.",
@@ -29,14 +32,19 @@
         "tool-harvesting-level": "The harvesting level for tools made of this ore.",
 
         "attack-damage": "The amount of damage these tools can do; this value corresponds to a set of vanilla tools, which are used for the values.",
-        "status-effect-on-attack": "Is a status effect applied to an entity when damaged with a sword made of this ore?",
+        "damage-status-effect": "Is a status effect applied to an entity when damaged with a sword made of this ore? (this is always negative)",
         "attack-effect-duration": "The duration of the status effect given to an entity after being damaged with a sword made of this ore.",
 
         "helmet-durability -> boots-durability": "The durability value of each armour piece.",
         
         "helmet-protection -> boots-protection": "The amount of armour points each armour piece gives. A full armour bar is 20 points.",
 
-        "refined-block-mask": "The base texture for the refined block of this ore."
+        "armour-status-effect": "Can the armour be worn for a status effect?",
+
+        "refined-block-mask": "The base texture for the refined block of this ore.",
+
+        "refined-block-status-effect": "Is a status effect given to an entity when it is standing on the block?",
+        "refined-block-status-effect-type": "Is the status effect given to an entity when it is standing on the block positive or negative?"
     },
     "options-by-key": {
         "dungeon-spawn -> end-city-spawn": "0 = none, 1 = very rare, 2 = rare, 3 = uncommon, 4 = common",

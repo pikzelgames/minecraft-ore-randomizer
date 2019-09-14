@@ -46,3 +46,5 @@ To run the program:
       - Fixed the setup program
     - 0.2.2
       - Removed `venv/` and `venv.zip` from repository to decrease filesize
+    - 0.2.3
+      - Added some more random parameters
