@@ -48,5 +48,5 @@
     "leggings-protection": ["range-inclusive", 2, 8],
     "boots-protection": ["range-inclusive", 1, 5],
 
-    "refined-block-mask": ["coal", "iron", "gold", "diamond", "redstone", "lapis", "emerald"]
+    "refined-block-mask": ["iron", "gold", "diamond", "redstone", "lapis", "emerald"]
 }

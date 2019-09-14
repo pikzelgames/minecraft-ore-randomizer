@@ -26,7 +26,7 @@ To run the program:
 
 ## Known Issues
 
-- If `refined-block-mask` is `iron`, the program produces a solid colour output for the refined block texture (block of x)
+- NONE
 
 ## Changelog
 
@@ -41,3 +41,6 @@ To run the program:
       - Edited the program to make a texture for the 'Block of x'
       - Added an easy setup file to decrease the initial download size and set up any dependencies
       - Added a legend to explain the contents of `options.json`
+    - 0.2.1
+      - Improved the refined block textures
+      - Fixed the setup program

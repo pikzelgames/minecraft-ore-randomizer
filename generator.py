@@ -10,7 +10,7 @@ if 'venv' not in os.listdir():
     time.sleep(5)
     quit()
 
-print("\nMINECRAFT ORE RANDOMIZER | VERSION 0.2.0 | github.com/pikzelgames\n")
+print('\nMINECRAFT ORE RANDOMIZER | VERSION 0.2.1 | github.com/pikzelgames\n')
 
 options = json.load(open('options.json', 'r'))
 properties = {}
@@ -40,7 +40,7 @@ ore_silhouette = Image.open(os.path.join(os.getcwd(), 'textures', 'ore-silhouett
 refined_item_mask = Image.open(os.path.join(os.getcwd(), 'textures', 'refined-item-masks', properties['refined-item-mask'] + '.png'))
 refined_item_silhouette = Image.open(os.path.join(os.getcwd(), 'textures', 'refined-item-silhouettes', properties['refined-item-mask'] + '.png'))
 refined_block_mask = Image.open(os.path.join(os.getcwd(), 'textures', 'refined-block-masks', properties['refined-block-mask'] + '.png'))
-refined_block_silhouette = Image.new('RGBA', (16, 16))
+refined_block_silhouette = Image.open(os.path.join(os.getcwd(), 'textures', 'refined-block-silhouettes', properties['refined-block-mask'] + '.png'))
 
 ore_texture = ore_base_block_img
 ore_overlay = Image.composite(solid_colour, ore_silhouette, ore_mask)

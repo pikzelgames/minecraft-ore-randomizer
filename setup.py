@@ -8,7 +8,7 @@ if 'venv.zip' in os.listdir() or 'venv' in os.listdir():
     time.sleep(5)
     quit()
 
-print('Downloading core library files from GitHub (29MB)...', end=' ', flush=True)
+print('Downloading core library files from GitHub (29.7MB)...', end=' ', flush=True)
 response = requests.get('https://github.com/pikzelgames/filehosting/blob/master/Minecraft%20Ore%20Randomizer/venv.zip?raw=true')
 with open('venv.zip', 'wb') as file:
     file.write(response.content)
@@ -19,7 +19,7 @@ with zipfile.ZipFile(open('venv.zip', 'rb')) as file:
     file.extractall()
 print('Done')
 
-print('\nFiles added: venv.zip\nFolders added: venv/\nDisk space change: +29MB')
+print('\nFiles added: venv.zip\nFolders added: venv/\nDisk space change: +29.7MB')
 print('Exiting in 5 seconds...')
 time.sleep(5)
 quit()
