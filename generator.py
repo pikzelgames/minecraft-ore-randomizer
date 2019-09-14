@@ -10,7 +10,7 @@ if 'venv' not in os.listdir():
     time.sleep(5)
     quit()
 
-print('\nMINECRAFT ORE RANDOMIZER | VERSION 0.2.1 | github.com/pikzelgames\n')
+print('\nMINECRAFT ORE RANDOMIZER | VERSION 0.2.2 | github.com/pikzelgames\n')
 
 options = json.load(open('options.json', 'r'))
 properties = {}

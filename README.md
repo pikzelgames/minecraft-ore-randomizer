@@ -44,3 +44,5 @@ To run the program:
     - 0.2.1
       - Improved the refined block textures
       - Fixed the setup program
+    - 0.2.2
+      - Removed `venv/` and `venv.zip` from repository to decrease filesize
