@@ -52,8 +52,11 @@
         "damage-status-effect -> consume-status-effect": "Minecraft status effect ID for corresponding effect",
         "tool-craftable -> consumable-status-effect": "0 = no, 1 = yes",
         "tool-mine-speed": "0 = wood, 1 = stone, 2 = iron, 4 = diamond, 5 = gold",
+        "tool-harvesting-level": "0 = hand, 1 = wood, 2 = stone, 3 = iron, 4 = diamond",
         "attack-damage": "0 = wood, 1 = stone, 2 = iron, 4 = diamond, 5 = gold",
-        "status-effect-on-attack": "0 = no, 1 = yes"
+        "damage-status-effect": "0 = no, 1 = yes",
+        "armour-status-effect": "0 = no, 1 = yes",
+        "refined-block-status-effect": "0 = no, 1 = yes"
     },
     "options-by-value": {
         "[ARRAY]": "The program chooses from the elements in the array in an equal probability distribution.",

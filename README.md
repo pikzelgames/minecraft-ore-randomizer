@@ -2,6 +2,10 @@
 
 This is a project inspired by Jay Exci's video [here](https://www.youtube.com/watch?v=CS5DQVSp058) on how infinite features could be added to Minecraft. The end goal for this project is to have a mod which allows you to have fully working and unique random ores naturally found in the world.
 
+## Notes
+
+- For extra control over the program, you can run it through a terminal. Open a terminal and navigate to the root directory of the program. Next, activate the virtual environment (on Windows `venv\Scripts\activate`, on Unix: `source venv/bin/activate`), then type `python generator.py <options>` on Windows and `python3 generator.py <options>` on Unix. Use the `-h` option for more information.
+
 ## Installation
 
 - Download or clone this repository
@@ -48,3 +52,7 @@ To run the program:
       - Removed `venv/` and `venv.zip` from repository to decrease filesize
     - 0.2.3
       - Added some more random parameters
+    - 0.2.4
+      - Created new values in `options-legend.json`
+      - Improved the aesthetic for refined blocks
+      - Added much extended command line functionality

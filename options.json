@@ -53,7 +53,7 @@
 
     "armour-status-effect": [1, 0, 0, 0, 0],
 
-    "refined-block-mask": ["iron", "gold", "diamond", "redstone", "lapis", "emerald"],
+    "refined-block-mask": ["coal", "iron", "gold", "diamond", "redstone", "lapis", "emerald"],
 
     "refined-block-status-effect": [1, 0, 0, 0, 0],
     "refined-block-status-effect-type": ["positive", "negative"]

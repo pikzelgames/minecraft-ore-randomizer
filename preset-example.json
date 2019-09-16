@@ -1,0 +1,5 @@
+{
+    "ore-base-block": "netherrack",
+    "colour": [0, 200, 0],
+    "refined-block-mask": "diamond"
+}
