@@ -2,6 +2,7 @@
     "ore-base-block": ["stone", "stone", "stone", "stone", "sand", "sand", "dirt", "dirt", "netherrack", "netherrack", "gravel", "andesite", "diorite", "granite"],
     "ore-mask": ["coal", "iron", "gold", "diamond", "redstone", "lapis", "emerald", "quartz"],
     "refined-item-mask": ["coal", "iron", "gold", "diamond", "redstone", "lapis", "emerald", "quartz", "charcoal", "flint", "slimeball"],
+    "refined-block-mask": ["coal", "iron", "gold", "diamond", "redstone", "lapis", "emerald"],
     "colour": "random-rgb",
 
     "spawning-rules": ["coal", "iron", "gold", "diamond", "redstone", "lapis", "emerald", "quartz"],
@@ -52,8 +53,6 @@
     "boots-protection": ["range-inclusive", 1, 5],
 
     "armour-status-effect": [1, 0, 0, 0, 0],
-
-    "refined-block-mask": ["coal", "iron", "gold", "diamond", "redstone", "lapis", "emerald"],
 
     "refined-block-status-effect": [1, 0, 0, 0, 0],
     "refined-block-status-effect-type": ["positive", "negative"]

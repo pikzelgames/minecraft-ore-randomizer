@@ -1,6 +1,9 @@
 Command usage:
--h, --help: Shows this help page
--p, --preset <file>: The values specified in this file will be applied to the parameters of the generator after randomization, so that these values will be locked. 'file' should be a JSON file, in the format of options.json.
--s, --save <file>: The resulting textures from this generator will be saved in this location. Must be a PNG file.
--S, --seed <seed>: The NumPy random generator will use this seed. Using the same seed multiple times will yield the same result. This seed must be between 0 and 2**32
--v, --version: Returns the current version of the project
+-h, --help: Shows this help page.
+-l, --legend <key>: Returns the description of a value from 'options-legend.json'.
+-n, --no-image: Prevents an image from showing.
+-o, --original-size: Prevents the generator from upscaling the images in both the saved files and the preview. Using this option will keep the images in 16x16.
+-p, --preset <file>: The values specified in this file will be applied to the parameters of the generator after randomization, so that these values will be locked. 'file' should be a JSON file, in the format of 'options.json'. The 'info.json' file created while using the -s option will also work.
+-s, --save <folder>: The resulting textures and info from this generator will be saved in this location. Must be a folder. The 'info.json' file created can be used as a preset.
+-S, --seed <seed>: The NumPy random generator will use this seed. Using the same seed multiple times will yield the same result. This seed must be an integer between 0 and 2**32.
+-v, --version: Returns the current version of the project.

@@ -40,6 +40,7 @@ To run the program:
       - Initial commit
       - Created a generator that has 5 different random properties (1 currently unused)
       - Wrote a program to use that information to make both an ore texture and an 'ingot' texture randomly
+  - 0.2.x
     - 0.2.0
       - Added 33 more properties for a total of 38
       - Edited the program to make a texture for the 'Block of x'
@@ -56,3 +57,10 @@ To run the program:
       - Created new values in `options-legend.json`
       - Improved the aesthetic for refined blocks
       - Added much extended command line functionality
+  - 0.3.x
+    - 0.3.0
+      - Added loads new command line options to allow extra control
+      - Made the save function compatible with the preset function for reloading saves
+      - Tweaked the program to catch more user errors and provide helpful feedback
+      - Reordered some values in `options.json` and `options-legend.json`
+      - Fixed an issue with the combined image when using the `--original-size` option

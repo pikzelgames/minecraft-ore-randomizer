@@ -6,7 +6,7 @@ import os
 import time
 import getopt
 
-VERSION = '0.2.4'
+VERSION = '0.3.0'
 
 def error(msg, exit_code, wait_for_exit=False):
     print(msg)
@@ -23,18 +23,31 @@ if 'venv' not in os.listdir():
     sys.exit(1)
 
 try:
-    options, arguments = getopt.getopt(sys.argv[1:], 'hp:s:S:v', ['help', 'preset=', 'save=', 'seed=', 'version'])
+    options, arguments = getopt.getopt(sys.argv[1:], 'hl:nop:s:S:v', ['help',  'legend=', 'no-image', 'original-size', 'preset=', 'save=', 'seed=', 'version'])
 except getopt.GetoptError:
     error('Usage: generator.py [options]\nFor a list of options, use -h', 2)
 
 preset = {}
 save_location = None
+show_image = True
+original_size = False
 
 for option, argument in options:
     if option in ('-h', '--help'):
         with open('cmd-help.txt', 'r') as file:
             print(file.read())
             sys.exit(0)
+    elif option in ('-l', '--legend'):
+        legend = json.load(open('options-legend.json'))
+        if argument in list(legend['keys'].keys()):
+            print(legend['keys'][argument])
+            sys.exit(0)
+        else:
+            error('Specified parameter does not exist in legend!', 2)
+    elif option in ('-n', '--no-image'):
+        show_image = False
+    elif option in ('-o', '--original-size'):
+        original_size = True
     elif option in ('-p', '--preset'):
         if os.path.isfile(argument):
             if argument.endswith('.json'):
@@ -45,10 +58,21 @@ for option, argument in options:
         else:
             error('Preset file not found!', 2)
     elif option in ('-s', '--save'):
-        if argument.endswith('.png'):
+        if not os.path.exists(argument) or os.path.isfile(argument):
+            os.mkdir(argument)
+        if sum([int(file in os.listdir(argument)) for file in ('combined-textures.png', 'ore.png', 'refined-item.png', 'refined-block.png', 'info.json')]) == 0:
             save_location = argument
         else:
-            error('Save filename does not end with .png!', 2)
+            while True:
+                user_input = input('Files would be overwritten in the save location? Do you want to continue? (y/n) ')
+                if user_input.lower() == 'y':
+                    save_location = argument
+                    break
+                elif user_input.lower() == 'n':
+                    print('Exiting...')
+                    sys.exit(0)
+                else:
+                    print('Invalid input')
     elif option in ('-S', '--seed'):
         try:
             if int(argument) >= 0 and int(argument) < 2**32:
@@ -120,11 +144,26 @@ refined_item_texture = Image.composite(solid_colour, refined_item_silhouette, re
 
 refined_block_texture = Image.composite(solid_colour, refined_block_silhouette, refined_block_mask)
 
-combined_image = Image.new('RGBA', (1536, 512), color=(255, 255, 255, 255))
-combined_image.paste(ore_texture.resize((512, 512)), (0, 0), ore_texture.resize((512, 512)))
-combined_image.paste(refined_item_texture.resize((512, 512)), (512, 0), refined_item_texture.resize((512, 512)))
-combined_image.paste(refined_block_texture.resize((512, 512)), (1024, 0), refined_block_texture.resize((512, 512)))
-combined_image.show()
+if not original_size:
+    ore_texture = ore_texture.resize((512, 512))
+    refined_item_texture = refined_item_texture.resize((512, 512))
+    refined_block_texture = refined_block_texture.resize((512, 512))
+
+if original_size:
+    size = 16
+else:
+    size = 512
+
+combined_image = Image.new('RGBA', (size * 3, size), color=(255, 255, 255, 255))
+combined_image.paste(ore_texture, (0, 0), ore_texture)
+combined_image.paste(refined_item_texture, (size, 0), refined_item_texture)
+combined_image.paste(refined_block_texture, (size * 2, 0), refined_block_texture)
+if show_image:
+    combined_image.show()
 
 if save_location != None:
-    combined_image.save(save_location)
+    combined_image.save(os.path.join(save_location, 'combined-textures.png'))
+    ore_texture.save(os.path.join(save_location, 'ore.png'))
+    refined_item_texture.save(os.path.join(save_location, 'refined-item.png'))
+    refined_block_texture.save(os.path.join(save_location, 'refined-block.png'))
+    json.dump(properties, open(os.path.join(save_location, 'info.json'), 'w'), sort_keys=True, indent=4)

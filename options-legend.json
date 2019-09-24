@@ -3,6 +3,7 @@
         "ore-base-block": "The block that the ore appears in, and is the base of the ore texture.",
         "ore-mask": "The image that determines the shape of the coloured parts of the ore and the vibrance of the colour in different pixels.",
         "refined-item-mask": "The image that determines the shape of the refined item and the vibrance of the colour in different pixels.",
+        "refined-block-mask": "The base texture for the refined block of this ore.",
         "colour": "The base colour of the ore and refined item. This will be the colour of the pixels in the textures where the mask colour is completely white.",
 
         "spawning-rules": "The set of spawning rules the game will follow when generating this ore. The options are preexisting spawning rules for vanilla ores.",
@@ -40,8 +41,6 @@
         "helmet-protection -> boots-protection": "The amount of armour points each armour piece gives. A full armour bar is 20 points.",
 
         "armour-status-effect": "Can the armour be worn for a status effect?",
-
-        "refined-block-mask": "The base texture for the refined block of this ore.",
 
         "refined-block-status-effect": "Is a status effect given to an entity when it is standing on the block?",
         "refined-block-status-effect-type": "Is the status effect given to an entity when it is standing on the block positive or negative?"
