@@ -54,6 +54,7 @@
 
     "armour-status-effect": [1, 0, 0, 0, 0],
 
+    "refined-block-crafting-recipe": [4, 9],
     "refined-block-status-effect": [1, 0, 0, 0, 0],
     "refined-block-status-effect-type": ["positive", "negative"]
 }

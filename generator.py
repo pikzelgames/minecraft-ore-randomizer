@@ -6,7 +6,7 @@ import os
 import time
 import getopt
 
-VERSION = '0.3.0'
+VERSION = '0.3.1'
 
 def error(msg, exit_code, wait_for_exit=False):
     print(msg)

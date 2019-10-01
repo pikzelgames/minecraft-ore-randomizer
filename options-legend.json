@@ -7,7 +7,7 @@
         "colour": "The base colour of the ore and refined item. This will be the colour of the pixels in the textures where the mask colour is completely white.",
 
         "spawning-rules": "The set of spawning rules the game will follow when generating this ore. The options are preexisting spawning rules for vanilla ores.",
-        "dungeon-spawn -> end-city-spawn": "The likelyhood of the game spawning the refined item in loot chests inside each generated structure.",
+        "dungeon-spawn -> end-city-spawn": "The likelihood of the game spawning the refined item in loot chests inside each generated structure.",
         
         "ore-drop": "Does the ore drop the refined item or the ore block when mined?",
         "minimum-tool-level": "The lowest harvesting level that a tool needs to be to harvest the ore.",
@@ -42,6 +42,7 @@
 
         "armour-status-effect": "Can the armour be worn for a status effect?",
 
+        "refined-block-crafting-recipe": "How many refined items are required to craft a refined block?"
         "refined-block-status-effect": "Is a status effect given to an entity when it is standing on the block?",
         "refined-block-status-effect-type": "Is the status effect given to an entity when it is standing on the block positive or negative?"
     },

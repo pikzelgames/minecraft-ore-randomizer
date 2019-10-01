@@ -28,10 +28,6 @@ To run the program:
 - Type `source venv/bin/activate`
 - Type `python generator.py`
 
-## Known Issues
-
-- NONE
-
 ## Changelog
 
 - 0.x
@@ -64,3 +60,6 @@ To run the program:
       - Tweaked the program to catch more user errors and provide helpful feedback
       - Reordered some values in `options.json` and `options-legend.json`
       - Fixed an issue with the combined image when using the `--original-size` option
+    - 0.3.1
+      - Added some more properties
+      - Fixed some mistakes in `options-legend.json`
