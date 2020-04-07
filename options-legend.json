@@ -42,21 +42,10 @@
 
         "armour-status-effect": "Can the armour be worn for a status effect?",
 
-        "refined-block-crafting-recipe": "How many refined items are required to craft a refined block?"
-        "refined-block-status-effect": "Is a status effect given to an entity when it is standing on the block?",
-        "refined-block-status-effect-type": "Is the status effect given to an entity when it is standing on the block positive or negative?"
-    },
-    "options-by-key": {
-        "dungeon-spawn -> end-city-spawn": "0 = none, 1 = very rare, 2 = rare, 3 = uncommon, 4 = common",
-        "minimum-tool-level": "0 = hand, 1 = wood, 2 = stone, 3 = iron, 4 = diamond",
-        "damage-status-effect -> consume-status-effect": "Minecraft status effect ID for corresponding effect",
-        "tool-craftable -> consumable-status-effect": "0 = no, 1 = yes",
-        "tool-mine-speed": "0 = wood, 1 = stone, 2 = iron, 4 = diamond, 5 = gold",
-        "tool-harvesting-level": "0 = hand, 1 = wood, 2 = stone, 3 = iron, 4 = diamond",
-        "attack-damage": "0 = wood, 1 = stone, 2 = iron, 4 = diamond, 5 = gold",
-        "damage-status-effect": "0 = no, 1 = yes",
-        "armour-status-effect": "0 = no, 1 = yes",
-        "refined-block-status-effect": "0 = no, 1 = yes"
+        "refined-block-crafting-recipe": "How many refined items are required to craft a refined block?",
+
+        "harvest-tool": "The type of tool required to break the base block, and by extension, the ore.",
+        "colour-rgba": "The ore colour with an alpha level."
     },
     "options-by-value": {
         "[ARRAY]": "The program chooses from the elements in the array in an equal probability distribution.",

@@ -63,3 +63,10 @@ To run the program:
     - 0.3.1
       - Added some more properties
       - Fixed some mistakes in `options-legend.json`
+  - 0.4.x
+    - 0.4.0
+      - Updated the core library
+      - Added tool generation
+      - Added armour generation
+      - Tweaked `options.json`
+      - Added some property processing
